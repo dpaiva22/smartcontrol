@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202a42;
+}
+
+.container {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 100;
+}
+
+.local  {
+    justify-content: end;
+    right: 0;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    flex: 1;
+    display: flex;
+}
+
+[src="assets/images/cardapio.png"] {
+    position: absolute;
+    left: 30px;
+    height: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #728187;
+    height: 120px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.tipos {
+    height: 500px;
+    background-color: aliceblue;
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h6 {
+    display: flex;
+    background-color: #404aae;
+    width: 50px;
+    color: white;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+img [alt=""] {
+    height: 200px;
+    border-radius: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 20px;
+    color: white;
+    display: flex;
+}
+
+[id^='grafico'] {
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+iframe {
+    border-radius: 20px;
+}

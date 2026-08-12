@@ -10,26 +10,36 @@
 
 <body>
     
-    <img src="assets/images/logo.png" alt="imagem-logo">
-    <form action="dashboard.html" method="get">
-        <h1> Bem vindo </h1>
-        <label for="email">E-mail</label>
-        <input type="text" id="email" placeholder="Digite seu e-mail">
+    <!--<div class="logo"><img src="assets/images/logo.png" alt="imagem logo"></div>-->
+    <div class="container">
+        <div class="card">
+            <h1>BEM VINDO!!</h1>
+            <form action="dashboard.html" method="get">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" placeholder="Digite seu e-mail">
         
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Digite sua Senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua Senha">
+                </div>
 
-        <label for="lembrar">Lembrar-me</label>
-        <input type="checkbox" name="lembrar" id="Lembrar">
+                <div class="lembrar">    
+                    <label for="lembrar">Lembrar-me</label>
+                    <input type="checkbox" name="lembrar" id="Lembrar">
+                </div>                     
+                    
+                    <button type="submit">Entrar</button>
 
-        <button type="submit">Entrar</button>
-
-        <a href="cadastro.html">Fazer Cadastro</a>
-        <a href="esqsenha.html">Esqueci a senha</a>
-
-    </form>
-    <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.8828918978652!2d-43.38970355486589!3d-21.735810154338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c137561ccdf%3A0x37fe39ecf248d0a5!2sJomar%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1785952460739!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" frameborder="0"></iframe>
-    </footer>
+                </form>
+                
+                <div class="rodape_login"> 
+                    <a href="cadastro.html">Fazer Cadastro</a>
+                    <a href="esqsenha.html">Esqueci a senha</a>
+                </div>
+            </div>
+        </div>        
+    <!--footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.8828918978652!2d-43.38970355486589!3d-21.735810154338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c137561ccdf%3A0x37fe39ecf248d0a5!2sJomar%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1785952460739!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </footer>-->
 </body>
 </html>
