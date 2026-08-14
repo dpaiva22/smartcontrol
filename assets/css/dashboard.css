@@ -1,41 +1,19 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #202a42;
+    font-family: Arial, sans-serif;
 }
-
-.container {
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    margin: 100;
-}
-
-.local  {
-    justify-content: end;
-    right: 0;
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    flex: 1;
-    display: flex;
-}
-
 
 .cabecalho {
     display: flex;
     background-color: #728187;
     height: 120px;
-    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -46,210 +24,123 @@ h1 {
     color: #ffffff;
 }
 
-.tipos {
-    height: 500px;
-    background-color: aliceblue;
-    margin: 20px;
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    padding: 10px;
-    justify-content: center;
-    border-radius: 10px;
-}
 
-h6 {
-    transform: rotate(90deg);
-    height: 20px;
-}
-
-img [alt=""] {
-    height: 200px;
-    border-radius: 10px;
-}
-
-li {
-    list-style: none;
-    margin: 20px;
-    color: white;
+.container {
+    gap: 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
+    margin: 50px auto;
+    max-width: 1200px;
 }
 
-[id^='grafico'] {
-    border-radius: 10px;
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.tipos {
+    height: 250px;
+    background-color: aliceblue;
+    min-width: 250px;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 15px;
+    justify-content: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+.porcentagem, 
+.porcentagem_veiculos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.graficos {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding-left: 10px;
+}
+
+
+h6 {
+    transform: rotate(-45deg); 
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: center;
+    color: #333;
+}
+
+
+[id$='_grafico'] {
+    width: 30px;
+    background-color: #404aae;
+    border-radius: 5px 5px 0 0;
+    transition: height 0.3s ease;
+}
+
+
+#moto_grafico { height: 80%; }
+#carro_grafico { height: 60%; }
+
+
+#bmw_grafico { height: 40%; }
+#honda_grafico { height: 85%; }
+#volkswagen_grafico { height: 95%; }
+#toyota_grafico { height: 70%; }
+
+
+#x6_grafico { height: 35%; }
+#civicg10_grafico { height: 75%; }
+#corolla_grafico { height: 90%; }
+#jetta_grafico { height: 80%; }
+
+
+#adv_grafico { height: 60%; }
+#pop100_grafico { height: 95%; }
+#cg160_grafico { height: 85%; }
+#gs1200_grafico { height: 50%; }
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
 }
 
 iframe {
     border-radius: 20px;
-}
-
-
-.porcentagem {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    color: #555;
-    font-size: 14px;
-}
-
-.porcentagem_veiculo {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    color: #555;
-    font-size: 14px;
-}
-
-#moto_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-}
-
-#carro_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-#bmw_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
-#toyota_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-#volkswagen_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-}
-
-#honda_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-}
-
-#x6_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
-#civicg10_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-#corolla_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-}
-
-#jetta_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-}
-
-#adv_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-#pop100_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-}
-
-#cg160_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-}
-
-#gs1200_grafico {
-    display: flex;
-    background-color: #404aae;
-    width: 50px;
-    color: white;
-    height: 150px;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
 }

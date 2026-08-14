@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Dashboard - Gerenciamento de Vendas</title>
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 <body>
-    <div class="cabecalho">
-        <!--img src="assets/images/logo.png" alt="imagem-logo">-->
+    <header class="cabecalho">
+        <!--<img src="assets/images/logo.png" alt="imagem-logo">-->
         <h1>Gerenciamento de Vendas</h1>
-    </div>    
-    <div class="container">
+    </header>   
 
-    </div class="veiculo"> 
-        <li><a href="veiculo-mais-vendido">
-            <h3>Veículo mais vendido</h3>
-            </a></li>
+    <main class="container">
+
+        <!-- Seção: Veículo mais vendido -->
+        <section class="veiculo"> 
+            <h2><a href="veiculo-mais-vendido">Veículo mais vendido</a></h2>
             <div class="tipos">
-            <div class="porcentagem_veiculos">
-                <p>100%</p>
-                <p>75%</p>
-                <p>50%</p>
-                <p>25%</p>
-                <p>0%</p>
+                <div class="porcentagem_veiculos">
+                    <p>100%</p>
+                    <p>75%</p>
+                    <p>50%</p>
+                    <p>25%</p>
+                    <p>0%</p>
+                </div>
+                <div class="graficos">
+                    <div id="moto_grafico"></div><h6>MOTO</h6>
+                    <div id="carro_grafico"></div><h6>CARRO</h6>
+                </div>
             </div>
-                <div id="moto_grafico"></div><h6>MOTO</h6>
-                <div id="carro_grafico"></div><h6>MOTO</h6>
-            </div>
-    </div>
+        </section>
             
-        </div class="marca"> 
-            <li><a href="marca-mais-procurado">
-                <h3>Marca-mais-procurada</h3>
-                    </a></li>
-                <div class="tipos">
+        <!-- Seção: Marca mais procurada -->
+        <section class="marca"> 
+            <h2><a href="marca-mais-procurado">Marca mais procurada</a></h2>
+            <div class="tipos">
                 <div class="porcentagem">
                     <p>100%</p>
                     <p>75%</p>
@@ -42,57 +43,61 @@
                     <p>25%</p>
                     <p>0%</p>
                 </div>
-                <div id="bmw_grafico"><h6>BMW</h6>
+                <div class="graficos">
+                    <div id="bmw_grafico"></div><h6>BMW</h6>
                     <div id="honda_grafico"></div><h6>HONDA</h6>
                     <div id="volkswagen_grafico"></div><h6>VOLKSWAGEN</h6>
                     <div id="toyota_grafico"></div><h6>TOYOTA</h6>
                 </div>
-        </div>
-
-        </div class="carro"> 
-            <li><a href="carro-mais-procurada">
-                <h3>Carro-mais-procurada</h3>
-                    </a></li>
-                <div class="tipos">
-             <div class="porcentagem">
-                <p>100%</p>
-                <p>75%</p>
-                <p>50%</p>
-                <p>25%</p>
-                <p>0%</p>
-            </div> 
-                <div id="x6_grafico"><h6>X6</h6>
-                <div id="civig10_grafico"></div><h6>CIVIC G10</h6>
-                <div id="corolla_grafico"></div><h6>COROLLA</h6>
-                <div id="jetta_grafico"></div><h6>JETTA</h6>
             </div>
-        </div>    
-            
-        </div class="moto"> 
-            <li><a href="moto-mais-procurada">
-                <h3>Marca-mais-procurada</h3>
-                </a></li>
-                <div class="tipos">
+        </section>
+
+        <!-- Seção: Carro mais procurado -->
+        <section class="carro"> 
+            <h2><a href="carro-mais-procurada">Carro mais procurado</a></h2>
+            <div class="tipos">
                 <div class="porcentagem">
-                <p>100%</p>
-                <p>75%</p>
-                <p>50%</p>
-                <p>25%</p>
-                <p>0%</p>
+                    <p>100%</p>
+                    <p>75%</p>
+                    <p>50%</p>
+                    <p>25%</p>
+                    <p>0%</p>
+                </div> 
+                <div class="graficos">
+                    <div id="x6_grafico"></div><h6>X6</h6>
+                    <div id="civicg10_grafico"></div><h6>CIVIC G10</h6>
+                    <div id="corolla_grafico"></div><h6>COROLLA</h6>
+                    <div id="jetta_grafico"></div><h6>JETTA</h6>
+                </div>
+            </div>    
+        </section>
+
+        <!-- Seção: Moto mais procurada -->
+        <section class="moto"> 
+            <h2><a href="moto-mais-procurada">Moto mais procurada</a></h2>
+            <div class="tipos">
+                <div class="porcentagem">
+                    <p>100%</p>
+                    <p>75%</p>
+                    <p>50%</p>
+                    <p>25%</p>
+                    <p>0%</p>
+                </div>
+                <div class="graficos">
+                    <div id="adv_grafico"></div><h6>ADV</h6>
+                    <div id="pop100_grafico"></div><h6>POP100</h6>
+                    <div id="cg160_grafico"></div><h6>CG160</h6>
+                    <div id="gs1200_grafico"></div><h6>GS1200</h6>
+                </div>
             </div>
-            <div id="adv_grafico"><h6>ADV</h6>
-                <div id="pop100_grafico"></div><h6>POP100</h6>
-                <div id="cg160_grafico"></div><h6>CG160</h6>
-                <div id="gs1200_grafico"></div><h6>GS1200</h6>
-            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="local">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.8828918978652!2d-43.38970355486589!3d-21.735810154338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c137561ccdf%3A0x37fe39ecf248d0a5!2sJomar%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1785952460739!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
-    </div>
-
-
-        <footer>
-            <div class="local">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.8828918978652!2d-43.38970355486589!3d-21.735810154338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c137561ccdf%3A0x37fe39ecf248d0a5!2sJomar%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1785952460739!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></iframe>
-            </div>
-        </footer>
+    </footer>
 </body>
 </html>
