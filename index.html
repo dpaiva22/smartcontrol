@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
+    <!-- <div class="logo"><img src="assets/images/logo.png" alt="imagem logo"></div> -->
     
-    <!--<div class="logo"><img src="assets/images/logo.png" alt="imagem logo"></div>-->
     <div class="container">
         <div class="card">
             <h1>BEM VINDO!!</h1>
-            <form action="dashboard.html" method="get">
+            
+            <form action="dashboard.html" method="post">
                 <div class="input-group">
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" placeholder="Digite seu e-mail" required>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
         
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua Senha" required>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua Senha" required>
                 </div>
 
                 <div class="lembrar">    
+                    <input type="checkbox" name="lembrar" id="lembrar">
                     <label for="lembrar">Lembrar-me</label>
-                    <input type="checkbox" name="lembrar" id="Lembrar">
-                </div>                     
+                </div>                    
                     
-                    <button type="submit">Entrar</button>
-
-                </form>
+                <button type="submit">Entrar</button>
+            </form>
                 
-                <div class="rodape_login"> 
-                    <a href="cadastro.html">Fazer Cadastro</a>
-                    <a href="esqsenha.html">Esqueci a senha</a>
-                </div>
+            <div class="rodape_login"> 
+                <a href="cadastro.html">Fazer Cadastro</a>
+                <a href="esqsenha.html">Esqueci a senha</a>
             </div>
-        </div>        
-    <!--footer>
+        </div>
+    </div>        
+
+    <!-- 
+    <footer>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1513.8828918978652!2d-43.38970355486589!3d-21.735810154338914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c137561ccdf%3A0x37fe39ecf248d0a5!2sJomar%20Auto%20Pe%C3%A7as!5e0!3m2!1spt-BR!2sbr!4v1785952460739!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </footer>-->
+    </footer> 
+    -->
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
