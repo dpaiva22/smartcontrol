@@ -18,6 +18,13 @@ setInterval(() => {
 }, 3*1000)
 
 
+const campoBusca = document.getElementById("campobusca");
+campoBusca.addEventListener('input', function() {
+    console.log(`O usuário digitou: ${campoBusca.value}`);
+});
+
+
+
 
 
 
