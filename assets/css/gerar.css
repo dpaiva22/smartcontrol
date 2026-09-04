@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 100px;
+    background-color: #7281B7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202A42;
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    background-color: #606796;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
