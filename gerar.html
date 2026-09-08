@@ -5,29 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerar Relatório</title>
     <link rel="stylesheet" href="assets/css/gerar.css">
+    <script src="https://kit.fontawesome.com/ecba8b4366.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="cabecalho">
         <h1>GERAR RELATÓRIO</h1>
+        <div class="menu">
+            <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i>
+        </div>
     </div>
+
     
     
     
     
     <div class="container">
+            
         <div class="card">
-            <form action="relatorio.html" method="get">
-                <div class="input-group">
-                    <label for="data_inicial">DATA INICIAL</label>
-                    <input type="date" name= "data_inicial" id= "data_inicial" required><br><br>
-                
-                    <label for="data_final">DATA FINAL</label>
-                    <input type="date" name= "data_final" id= "data_final" required><br><br>
+        
+            <form action="" method="get">
+                    
+                    <div class="form-group">
+                        <label for="report-type">Tipo de Relatório</label>
+                        <select id="report-type" name="report_type" required>
+                            <option value="" disabled selected>Selecione uma opção...</option>
+                            <option value="vendas">Relatório de Vendas</option>
+                            <option value="clientes">Cadastro de Clientes</option>
+                            <option value="veiculos">Controle de Veículos</option>
+                        </select>
+                    </div>
+                    
+                    <div class="date-range-group">
+                        <div class="date-range">
+                            <div>
+                                Data Inicial:
+                                <br><input type="date" id="date-start" name="date_start" required>
+                            </div>
+                            <div>
+                                Data Final:
+                                <input type="date" id="date-end" name="date_end" required>
+                            </div>
+                        </div>
                 </div>
-                <button type="submit">GERAR RELATÓRIO</button>
-            </form>
-        </div>
+                    <div class="status-group">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="todos">Todos</option>
+                            <option value="ativos">Apenas Ativos / Concluídos</option>
+                            <option value="pendentes">Pendentes</option>
+                            <option value="cancelados">Cancelados</option>
+                        </select>                                                                                                                                                
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Gerar Relatório</button>
+
+                </form>
+        </div>    
     </div>
+
+    
+
+
+
+
 
 </body>
 </html>
