@@ -115,3 +115,27 @@ select, input[type="status"] {
     cursor: pointer;
 }
 
+#btn-temas {
+    color: white;
+    background-color: #7281B7;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    border-color: white;
+    padding: 5px
+}
+
+#btnMenu {
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #7281B7;;
+    align-items: center;
+}
+
+
+
