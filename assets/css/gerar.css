@@ -69,29 +69,6 @@ h1 {
 
 
 
-button.btn-submit {
-    background-color: #fff;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: #7281B7;
-    color: white;
-    border: none;
-    padding: 14px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-top: 100px;
-}
-
 select, input[type="date"] {
     width: 100%;
     padding: 8px;
@@ -135,6 +112,20 @@ select, input[type="status"] {
     border-radius: 10px;
     background-color: #7281B7;;
     align-items: center;
+}
+
+.btn-submit {
+    display: block;
+    margin: 100px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 
